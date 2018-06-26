@@ -8,8 +8,8 @@ from pylastic import ESWrapper
 import logging,uuid, json
 
 logger = logging.getLogger('PromoDataWorker')
-#es = ESWrapper("84.40.63.146:9200",logger)
-es = ESWrapper("Pmsi0087:9200",logger)
+es = ESWrapper("84.40.63.146:9200",logger)
+#es = ESWrapper("Pmsi0087:9200",logger)
 
 def build_and_store_custom_work_list():
     json_rows = []
